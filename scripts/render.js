@@ -1,14 +1,13 @@
-
 /*
-   @func   render.square_pack.js
+renders the resulting grid,
+calculated with square_pack.js
+to the canvas
 
-   @descr   renders the results calculated with square_pack.js to the canvas
+@params  (elements) Number of elements given as positve integer
+         (gridwidth) windowWidth, calculated by p5, in pixels
+         (gridheight) windowHeight, calculated by p5, in pixels
 
-   @params  (elements)     Number of elements given as positve integer
-            (gridwidth)    Available windowWidth, calculated by p5, in pixel
-            (gridheight)   Available windowHeight, calculated by p5, in pixel
-
-   @author   Matthias Jäger
+@author   Matthias Jäger
 */
 
 function renderSquarePack(elements, gridwidth, gridheight) {
@@ -16,11 +15,12 @@ function renderSquarePack(elements, gridwidth, gridheight) {
    // stores the returned results in grid
    let grid = calc(elements, gridwidth, gridheight);
    let scl = grid.scl;
-   let cols =  grid.col;
-   let rows =  grid.row;
+   let cols = grid.col;
+   let rows = grid.row;
 
    // only display grid cells
-   let counter = 0, row, col, x, y;
+   let counter = 0;
+   let row, col, x, y;
 
    // draws the whole grid with cols and rows
    for (row = 0; row < rows; row++) {
