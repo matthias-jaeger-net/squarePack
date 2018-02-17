@@ -4,7 +4,7 @@ Written in phyton, by Markus Murschitz (Vienna, 2018).
 https://github.com/mamut-m/square-pack
 
 
-##About square_pack.js
+## About square_pack.js
 The square_pack is an algorithm, that calculates the longest possible
 side (S) of any number (N) squares, in a given rectangle (W x H) and
 returns the number of columns (C) and rows (R). I translated Markus
