@@ -1,14 +1,20 @@
 # How to pack a specified number of squares in any given browser window?
 
+This problem, occurring in another project, bothered me for a long time.
+I talked with many people about it and like to thank those for their input.
+
+
+## How the program works.  
+
 Each animation frame `calc(n,w,h)` in square_pack.js is
 called with three parameters and returns a grid layout.
 
-## params  
+### params  
 (n):(number of squares to pack)
 (w):(width of the window)
 (h):(height of the window)
 
-## return  
+### return  
 (s):(optimized side of a single square)
 (c):(number of columns)
 (r):(number of rows)
