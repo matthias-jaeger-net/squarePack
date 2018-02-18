@@ -3,6 +3,7 @@
 This problem, occurring in another project, bothered me for a long time.
 I talked with many people about it and like to thank those for their input.
 
+![Frame 1](output/Frame-1.jpg)
 
 ## How the program works.  
 
