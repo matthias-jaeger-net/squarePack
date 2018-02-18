@@ -36,10 +36,13 @@
 
 /* Main Program */
 
+let queryFrame, canvas;
+
 function setup() {
    // p5.setup executes before p5.draw
    // Program starts with an empty canvas
-   createCanvas(windowWidth, windowHeight);
+   canvas = createCanvas(windowWidth, windowHeight);
+   queryFrame = 4;
 }
 
 function draw() {
@@ -50,7 +53,7 @@ function draw() {
 
    // animation timing
    let limit = 100;
-   let slow = 3;
+   let slow = 1;
    let high = 60;
 
    if(frameCount < limit) {
@@ -62,4 +65,7 @@ function draw() {
    // renders animation frames
    // see render.square_pack.js
    renderSquarePack(frameCount, width, height);
+   if(frameCount == queryFrame) {
+      //saveCanvas(canvas, frameCount + "-frame", "jpg");
+   }
 }

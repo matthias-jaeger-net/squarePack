@@ -29,10 +29,9 @@ function renderSquarePack(elements, gridwidth, gridheight) {
          x = col * scl;
          y = row * scl;
          // but there are possibly more cells than elements
-         if (counter <= elements) {
+         if (counter < elements) {
             fill(255);
             rect(x, y, scl, scl);
-            counter++;
          } else {
             break;
          }
@@ -41,8 +40,10 @@ function renderSquarePack(elements, gridwidth, gridheight) {
             fill(0);
             // responsive text size
             textSize(map(scl, height, 1, 160, 5));
-            text(counter, x + scl/2, y + scl/2);
+            text(counter+1, x + scl/2, y + scl/2);
          }
+         counter++;
+
       }
    }
 }
