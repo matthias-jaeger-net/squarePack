@@ -29,10 +29,18 @@ the loop when (s) is reaching 1.
 
 https://matthias-jaeger-net.github.io/square_pack.js/
 
-## Results
+# Results
 
+## n = 1
+In this case the biggest square is built from the shorter side.
 ![Frame 1](output/Frame-1.jpg)
+
+## n = 2
+Jumping to the longer side and building two squares in a row.
 ![Frame 2](output/Frame-2.jpg)
+
+## n = 3
+Three squares? Best fits with
 ![Frame 3](output/Frame-3.jpg)
 ![Frame 4](output/Frame-4.jpg)
 ![Frame 5](output/Frame-5.jpg)
