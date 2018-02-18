@@ -1,9 +1,10 @@
 # How to pack a specified number of squares in any given browser window?
 
+![Frame 1221](output/Frame-1221.png)
+
 This problem, occurring in another project, bothered me for a long time.
 I talked with many people about it and like to thank those for their input.
 
-![Frame 1](output/Frame-1.jpg)
 
 ## How the program works.  
 
@@ -27,6 +28,14 @@ rendered in a responsive html5 canvas.
 Watch the poor algorithm trying to pack an increasing
 number of squares on the screen until it eventually breaks
 the loop when (s) is reaching 1.
+
+## Results
+
+![Frame 1](output/Frame-1.jpg)
+![Frame 2](output/Frame-2.jpg)
+![Frame 3](output/Frame-3.jpg)
+![Frame 4](output/Frame-4.jpg)
+![Frame 5](output/Frame-5.jpg)
 
 ## Working example:  
 
