@@ -32,17 +32,24 @@ https://matthias-jaeger-net.github.io/square_pack.js/
 # Results
 
 ## n = 1
-In this case the biggest square is built from the shorter side.
 ![Frame 1](output/Frame-1.jpg)
 
+In this case the biggest square is built from the shorter side.
+
+
 ## n = 2
-Jumping to the longer side and building two squares in a row.
 ![Frame 2](output/Frame-2.jpg)
 
+Jumping to the longer side and building two squares in a row.
+
 ## n = 3
-Three squares? Best fits with
 ![Frame 3](output/Frame-3.jpg)
+
+Three squares? Best fits with three in a row in this case.
+
+## n = 4
 ![Frame 4](output/Frame-4.jpg)
+
 ![Frame 5](output/Frame-5.jpg)
 ![Frame 6](output/Frame-6.jpg)
 ![Frame 7](output/Frame-7.jpg)
