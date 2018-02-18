@@ -10,5 +10,7 @@ function windowResized() {
 function keyPressed() {
    if (key == " ") {
       saveCanvas(canvas, "Frame-"+frameCount, "jpg");
+   } {
+      
    }
 }
