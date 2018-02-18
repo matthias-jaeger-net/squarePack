@@ -21,43 +21,24 @@ The returned results are showed as rectangles
 with a text, displaying the element number and
 rendered in a responsive html5 canvas.
 
+## Working example:  
+
 Watch the poor algorithm trying to pack an increasing
 number of squares on the screen until it eventually breaks
 the loop when (s) is reaching 1.
 
+https://matthias-jaeger-net.github.io/square_pack.js/
+
 ## Results
 
-I tested this on my laptop screen and had the
-program stop at specific frames to export an image.
-
-Frame 1
 ![Frame 1](output/Frame-1.jpg)
-
-Frame 2
 ![Frame 2](output/Frame-2.jpg)
-
-Frame 3
 ![Frame 3](output/Frame-3.jpg)
-
-Frame 4
 ![Frame 4](output/Frame-4.jpg)
-
-Frame 5
-
 ![Frame 5](output/Frame-5.jpg)
-
-Frame 6
-
 ![Frame 6](output/Frame-6.jpg)
-
-Frame 7
-
 ![Frame 7](output/Frame-7.jpg)
 
-
-## Working example:  
-
-https://matthias-jaeger-net.github.io/square_pack.js/
 
 
 ## About square_pack in python
