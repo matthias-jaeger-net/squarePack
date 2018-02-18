@@ -2,10 +2,6 @@
 
 ![Frame 1221](output/Frame-1221.png)
 
-This problem, occurring in another project, bothered me for a long time.
-I talked with many people about it and like to thank those for their input.
-
-
 ## How the program works.  
 
 Each animation frame `calc(n,w,h)` in square_pack.js is
@@ -31,10 +27,25 @@ the loop when (s) is reaching 1.
 
 ## Results
 
+I tested this on my laptop screen and had the 
+program stop at specific frames to export an image. 
+
+Frame 1
 ![Frame 1](output/Frame-1.jpg)
+
+Frame 2
 ![Frame 2](output/Frame-2.jpg)
+Orientation along the width
+
+Frame 3
 ![Frame 3](output/Frame-3.jpg)
+
+Frame 4
+
 ![Frame 4](output/Frame-4.jpg)
+
+Frame 5
+
 ![Frame 5](output/Frame-5.jpg)
 
 ## Working example:  
