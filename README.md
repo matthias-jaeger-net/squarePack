@@ -40,13 +40,13 @@ Orientation along the width
 Frame 3
 ![Frame 3](output/Frame-3.jpg)
 
-Frame 4
+Frame 5
 
-![Frame 4](output/Frame-4.jpg)
+![Frame 4](output/Frame-5.jpg)
 
 Frame 5
 
-![Frame 5](output/Frame-5.jpg)
+![Frame 6](output/Frame-6.jpg)
 
 ## Working example:  
 
