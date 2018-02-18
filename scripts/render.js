@@ -10,36 +10,38 @@
 */
 
 function renderSquarePack(elements, gridw, gridh) {
-   // call to calc()
-   let grid = calc(elements, gridw, gridh);
-   // returned results stored in grid
-   let scl = grid.scl;
-   let cols = grid.col;
-   let rows = grid.row;
 
-   // lable grid cells
+   // a call to calc() returns rows, columns and scale
+   let grid = calc(elements, gridw, gridh);
+
+   // lable grid cells starting with 1
    let index = 1;
 
-   // draw the results as a grid
-   for (let row = 0; row < rows; row++) {
-      for (let col = 0; col < cols; col++) {
-         // calculate coordinates
-         let x = col * scl;
-         let y = row * scl;
+   // for every row create every colum
+   for (let row = 0; row < grid.row; row++) {
+      for (let col = 0; col < grid.col; col++) {
          // only draw actual elements
          if (index <= elements) {
+
+            // calculate coordinates
+            let x = col * grid.scl;
+            let y = row * grid.scl;
+
             // outline square
             fill(255);
-            rect(x, y, scl, scl);
+            rect(x, y, grid.scl, grid.scl);
+
             // label square
             fill(0);
-            textSize(map(scl, height, 1, 160, 5));
-            text(index, x + scl/2, y + scl/2);
+            textSize(map(grid.scl, gridh, 1, 160, 5));
+            text(index, x + grid.scl/2, y + grid.scl/2);
+
+            // increase index
+            index++;
          } else {
             // No more elements to render
             break;
          }
-         index++;
       }
    }
 }
