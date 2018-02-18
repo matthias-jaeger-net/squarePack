@@ -9,7 +9,7 @@ who wrote the code for calc() in python, after talking to me about
 the problem on a lazy afternoon in Austria. See my translation below.
 Have a look at his version: https://github.com/mamut-m/square-pack
 
-``javascript
+``JavaScript
 let a_opt = round(sqrt(w * h / ns));
 let a = a_opt, nx, ny;
 while (a > 0) {
