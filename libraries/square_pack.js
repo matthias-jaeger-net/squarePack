@@ -1,12 +1,9 @@
 /*
-*  @title   square_pack.js
+*  calculate the size of squares and the grid (nx times ny cells)
+*  they can be placed in to optimaly fill a rectangle
 *
-*  @original_author: Markus Murschitz
+*  @author: Markus Murschitz
 *  @javascript_version: Matthias Jäger
-*
-*  @descr   calculate the size of squares and the grid
-*           (nx times ny cells) they can be placed in
-*           to optimaly fill a rectangle
 *
 *  @param ns: number of squares
 *  @param w: width of the available space in pixels
@@ -19,28 +16,36 @@
 */
 
 function calc(ns, w, h) {
-   // prevent errors
+   // returns
+   let a, col, row;
+
+   // errors
    if (ns > w * h){
       console.log("can not fit " + ns + " squares (of a at least 1x1 px) in an image of size " + w + " x " + h);
    }
    if (ns == 0) {
       console.log("can not fit 0 squares");
    }
-   // calculate biggest possible square side
-   let a_opt = round(sqrt(w * h / ns));
-   let a = a_opt, nx, ny;
+
+   // calculate biggest possible area
+   const a_opt = floor(sqrt(w * h / ns));
+
+   // store the result in a
+   a = a_opt;
+
    while (a > 0) {
-      nx = floor(w / a);
-      ny = floor(h / a);
+      col = floor(w / a);
+      row = floor(h / a);
       a--;
-      if(nx > 0 && ny > 0 && nx * ny >= ns) {
+      if(col > 0 && row > 0 && row * col >= ns) {
          break;
       }
    }
+
    // return the final solution
    return {
       scl: a,
-      col: nx,
-      row: ny
+      col: col,
+      row: row
    }
 }

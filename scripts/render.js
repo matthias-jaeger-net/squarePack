@@ -35,7 +35,6 @@ function renderSquarePack(elements, gridw, gridh) {
             fill(0);
             textSize(map(grid.scl, gridh, 1, 160, 5));
             text(index, x + grid.scl/2, y + grid.scl/2);
-
             // increase index
             index++;
          } else {
