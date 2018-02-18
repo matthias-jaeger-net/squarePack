@@ -35,7 +35,6 @@ Frame 1
 
 Frame 2
 ![Frame 2](output/Frame-2.jpg)
-Orientation along the width
 
 Frame 3
 ![Frame 3](output/Frame-3.jpg)
@@ -44,7 +43,7 @@ Frame 5
 
 ![Frame 4](output/Frame-5.jpg)
 
-Frame 5
+Frame 6
 
 ![Frame 6](output/Frame-6.jpg)
 
