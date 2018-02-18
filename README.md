@@ -2,8 +2,29 @@
 
 ![Frame 86](output/Frame-86.jpg)
 
-## How the program works.  
+## This problem was bothering me for a long time   
 
+This JavaScript code is based on square_pack by Markus Murschitz,
+who wrote the code for calc() in python, after talking to me about
+the problem on a lazy afternoon in Austria. See my translation below.
+Have a look at his version: https://github.com/mamut-m/square-pack
+
+``javascript
+let a_opt = round(sqrt(w * h / ns));
+let a = a_opt, nx, ny;
+while (a > 0) {
+  nx = floor(w / a);
+  ny = floor(h / a);
+  a--;
+  if(nx > 0 && ny > 0 && nx * ny >= ns) {
+    break;
+  }
+}
+``
+
+## How the example works.  
+
+I setup and draw an animation with the p5 JavaScript library.
 Each animation frame `calc(n,w,h)` in square_pack.js is
 called with three parameters and returns a grid layout.
 
@@ -17,9 +38,8 @@ called with three parameters and returns a grid layout.
 (c):(number of columns)
 (r):(number of rows)
 
-The returned results are showed as rectangles
-with a text, displaying the element number and
-rendered in a responsive html5 canvas.
+The results are rendered as a grid of
+labled squares in a responsive html5 canvas.
 
 ## Working example:  
 
@@ -57,11 +77,7 @@ Three squares? Best fits with three in a row in this case.
 
 
 ## About square_pack in python
-This JavaScript code is based on square_pack by Markus Murschitz,
-who wrote the code for calc() in python, after talking to me about
-the problem on a lazy afternoon in Austria.
 
-Have a look at his version: https://github.com/mamut-m/square-pack
 
 ## libs   
 I'm also using the P5 JavaScript library to render this
