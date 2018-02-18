@@ -16,8 +16,9 @@
 */
 
 function calc(ns, w, h) {
-   // returns
-   let a, col, row;
+
+   // returned variables
+   let scl, col, row;
 
    // errors
    if (ns > w * h){
@@ -30,13 +31,14 @@ function calc(ns, w, h) {
    // calculate biggest possible area
    const a_opt = floor(sqrt(w * h / ns));
 
-   // store the result in a
-   a = a_opt;
+   // store the result
+   scl = a_opt;
 
-   while (a > 0) {
-      col = floor(w / a);
-      row = floor(h / a);
-      a--;
+   // reduce area until it is optimized
+   while (scl > 0) {
+      col = floor(w / scl);
+      row = floor(h / scl);
+      scl = scl - 1;
       if(col > 0 && row > 0 && row * col >= ns) {
          break;
       }
@@ -44,7 +46,7 @@ function calc(ns, w, h) {
 
    // return the final solution
    return {
-      scl: a,
+      scl: scl,
       col: col,
       row: row
    }
