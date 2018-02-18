@@ -1,6 +1,6 @@
 # How to pack a specified number of squares in any given browser window?
 
-![Frame 1221](output/Frame-1221.png)
+![Frame 86](output/Frame-86.png)
 
 ## How the program works.  
 
@@ -27,8 +27,8 @@ the loop when (s) is reaching 1.
 
 ## Results
 
-I tested this on my laptop screen and had the 
-program stop at specific frames to export an image. 
+I tested this on my laptop screen and had the
+program stop at specific frames to export an image.
 
 Frame 1
 ![Frame 1](output/Frame-1.jpg)
@@ -39,13 +39,21 @@ Frame 2
 Frame 3
 ![Frame 3](output/Frame-3.jpg)
 
+Frame 4
+![Frame 4](output/Frame-4.jpg)
+
 Frame 5
 
-![Frame 4](output/Frame-5.jpg)
+![Frame 5](output/Frame-5.jpg)
 
 Frame 6
 
 ![Frame 6](output/Frame-6.jpg)
+
+Frame 7
+
+![Frame 7](output/Frame-7.jpg)
+
 
 ## Working example:  
 

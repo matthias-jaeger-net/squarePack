@@ -34,21 +34,19 @@
 */
 
 
-/* Main Program */
+// Global variables
+let canvas;
 
-let queryFrame, canvas;
-
+// p5.setup executes before p5.draw
 function setup() {
-   // p5.setup executes before p5.draw
    // Program starts with an empty canvas
    canvas = createCanvas(windowWidth, windowHeight);
-   queryFrame = 4;
 }
 
+// p5.draw contious animation loop
 function draw() {
-   // p5.draw contious animation loop
    // clear background with white
-   background(255);
+   background(230);
    textAlign(CENTER, CENTER);
 
    // animation timing
@@ -63,9 +61,5 @@ function draw() {
    }
 
    // renders animation frames
-   // see render.square_pack.js
    renderSquarePack(frameCount, width, height);
-   if(frameCount == queryFrame) {
-      //saveCanvas(canvas, frameCount + "-frame", "jpg");
-   }
 }

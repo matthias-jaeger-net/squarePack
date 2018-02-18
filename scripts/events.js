@@ -6,3 +6,9 @@ function windowResized() {
    resizeCanvas(windowWidth, windowHeight);
    renderSquarePack(frameCount, width, height);
 }
+
+function keyPressed() {
+   if (key == " ") {
+      saveCanvas(canvas, "Frame-"+frameCount, "jpg");
+   }
+}
