@@ -1,6 +1,6 @@
 # How to pack a specified number of squares in any given browser window?
 
-![Frame 86](output/Frame-86.png)
+![Frame 86](output/Frame-86.jpg)
 
 ## How the program works.  
 
