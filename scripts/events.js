@@ -1,16 +1,20 @@
-/* Events */
+/*
+*  Events
+*
+*  Browserwindow has changed
+*  User has pressed keyboard
+*/
 
+// p5.windowResized
 function windowResized() {
-   // p5.windowResized Browserwindow has changed
    // recalculate everything
    resizeCanvas(windowWidth, windowHeight);
    renderSquarePack(frameCount, width, height);
 }
 
+// save current canvas as an image
 function keyPressed() {
    if (key == " ") {
       saveCanvas(canvas, "Frame-"+frameCount, "jpg");
-   } {
-      
    }
 }

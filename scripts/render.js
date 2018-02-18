@@ -1,11 +1,11 @@
 /*
-renders the resulting grid to the canvas
-
-@params  (elements) Number of elements given as positve integer
-         (gridwidth) windowWidth, calculated by p5, in pixels
-         (gridheight) windowHeight, calculated by p5, in pixels
-
-@author   Matthias Jäger
+*  renders the resulting grid to the canvas
+*  
+*  @params  (elements) Number of elements given as positve integer
+*           (gridwidth) windowWidth, calculated by p5, in pixels
+*           (gridheight) windowHeight, calculated by p5, in pixels
+*
+*  @author   Matthias Jäger
 */
 
 function renderSquarePack(elements, gridwidth, gridheight) {
