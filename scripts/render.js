@@ -1,7 +1,5 @@
 /*
-renders the resulting grid,
-calculated with square_pack.js
-to the canvas
+renders the resulting grid to the canvas
 
 @params  (elements) Number of elements given as positve integer
          (gridwidth) windowWidth, calculated by p5, in pixels
@@ -20,14 +18,13 @@ function renderSquarePack(elements, gridwidth, gridheight) {
 
    // only display grid cells
    let counter = 0;
-   let row, col, x, y;
 
    // draws the whole grid with cols and rows
-   for (row = 0; row < rows; row++) {
-      for (col = 0; col < cols; col++) {
+   for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
          // calculate x, y coordinates for all cells
-         x = col * scl;
-         y = row * scl;
+         let x = col * scl;
+         let y = row * scl;
          // but there are possibly more cells than elements
          if (counter < elements) {
             fill(255);
@@ -43,7 +40,6 @@ function renderSquarePack(elements, gridwidth, gridheight) {
             text(counter+1, x + scl/2, y + scl/2);
          }
          counter++;
-
       }
    }
 }
