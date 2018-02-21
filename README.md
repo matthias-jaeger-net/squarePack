@@ -1,35 +1,52 @@
-# How to pack a specified number of squares in any given browser window?
+# How to pack a specified number of squares in a given browser window, maintaining an optimal side length?
 
 ![Frame 86](output/Frame-86.jpg)
 
-## This problem was bothering me for a long time   
+Watch our poor algorithm trying to pack an increasing
+number of squares on the screen until it eventually breaks
+the loop when (s) is reaching 1.
 
-This JavaScript code is based on square_pack by Markus Murschitz,
-who wrote the code for calc() in python, after talking to me about
-the problem on a lazy afternoon in Austria. See my translation below.
+https://matthias-jaeger-net.github.io/square_pack.js/
+
+## About the problem  
+Imagine you would want to place N squares in a given area,
+defined by its width and height. Our algorithm is based on code
+by Markus Murschitz, who wrote a python version of this, that
+I translated poorly into JavaScript.
+
+Have a look at Markus version: https://github.com/mamut-m/square-pack
+
+## About my program  
+
+I'm using the P5 JavaScript library (http://p5.js.org) to setup and draw
+an animation in a responsive HTML5 canvas element. Each frame i call
+our algorithm with a constantly increasing specified number and the current
+size of the window and draw the results to the screen.
+
 
 ```JavaScript
-// My poor translation 
-let a_opt = round(sqrt(w * h / ns));
-let a = a_opt, nx, ny;
-while (a > 0) {
-  nx = floor(w / a);
-  ny = floor(h / a);
-  a--;
-  if(nx > 0 && ny > 0 && nx * ny >= ns) {
-    break;
-  }
-}
+// calculate biggest possible length
+const len_opt = floor(sqrt(w * h / n));
 ```
-Have a look at Markus version: https://github.com/mamut-m/square-pack
+
+
+```JavaScript
+// calculate biggest possible length
+const len_opt = floor(sqrt(w * h / n));
+```
+
+```JavaScript
+// calculate biggest possible length
+const len_opt = floor(sqrt(w * h / n));
+```
 
 ```python
     a_opt = int(floor(sqrt(float(w*h)/ns)))
 
     for a in range(a_opt,0,-1):
-        nx = int(floor(w/a)) 
+        nx = int(floor(w/a))
         ny = int(floor(h/a))
-        if nx > 0 and ny > 0 and nx * ny >= ns: 
+        if nx > 0 and ny > 0 and nx * ny >= ns:
             break   
 ```
 
@@ -55,35 +72,15 @@ called with three parameters and returns a grid layout.
 The results are rendered as a grid of
 labled squares in a responsive html5 canvas.
 
-## Working example:  
-
-Watch the poor algorithm trying to pack an increasing
-number of squares on the screen until it eventually breaks
-the loop when (s) is reaching 1.
-
-https://matthias-jaeger-net.github.io/square_pack.js/
 
 # Results
 
-## n = 1
+Testing the
+
 ![Frame 1](output/Frame-1.jpg)
-
-In this case the biggest square is built from the shorter side.
-
-
-## n = 2
 ![Frame 2](output/Frame-2.jpg)
-
-Jumping to the longer side and building two squares in a row.
-
-## n = 3
 ![Frame 3](output/Frame-3.jpg)
-
-Three squares? Best fits with three in a row in this case.
-
-## n = 4
 ![Frame 4](output/Frame-4.jpg)
-
 ![Frame 5](output/Frame-5.jpg)
 ![Frame 6](output/Frame-6.jpg)
 ![Frame 7](output/Frame-7.jpg)
