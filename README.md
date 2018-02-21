@@ -48,11 +48,8 @@ squares = [];
 
 ### each frame calc() returns rows, columns and side length
 ```JavaScript
-//
+// stores the results in grid
 grid = calc(number, width, height);
-rows = grid.row;
-cols = grid.col;
-cell = grid.len;
 ```
 
 ### in calc() an optimal square is calculated
