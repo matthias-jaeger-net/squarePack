@@ -2,14 +2,10 @@
 *  How to pack a specified number of squares
 *  in any given browser window?
 *
-*  Matthias Jäger, Februar, Graz, 2018
+*  Matthias Jäger
+*  Februar, Graz, 2018
 *
-*
-*  My code is based on Markus Murschitz python version.
-*  Have a look at: https://github.com/mamut-m/square-pack
-*
-
-*
+*  Documentation: https://github.com/matthias-jaeger-net/square_pack.js
 */
 
 // defined in setup
@@ -76,5 +72,5 @@ function draw() {
 *
 *  js/square_pack.js
 *  js/square.js
-*  js/square.js
+*  js/events.js
 */
