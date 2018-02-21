@@ -1,12 +1,12 @@
 # How to pack a specified number of squares in a given browser window, maintaining an optimal side length?
 
-![Frame 86](output/Frame-86.jpg)
-
 Watch our poor algorithm trying to pack an increasing
 number of squares on the screen until it eventually breaks
 the loop when (s) is reaching 1.
 
 https://matthias-jaeger-net.github.io/square_pack.js/
+
+![Frame 86](output/Frame-86.jpg)
 
 ## About the problem  
 Imagine you would want to place N squares in a given area,
