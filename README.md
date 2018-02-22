@@ -4,7 +4,7 @@ Watch our poor algorithm trying to pack an increasing
 number of squares on the screen until it eventually breaks
 the loop when (s) is reaching 1.
 
-https://matthias-jaeger-net.github.io/square_pack.js/
+https://matthias-jaeger-net.github.io/squarePack/
 
 ![Frame 86](output/Frame-86.jpg)
 
