@@ -1,8 +1,9 @@
 /*
 *  @function P5 setup
 *
-*  The keyPressed() function is called once every time a key is pressed.
-*  The keyCode for the key that was pressed is stored in the keyCode variable.
+*  The setup() function defines the global variables
+*  before draw() is called in a continous loop.
+*   
 */
 
 function setup() {
