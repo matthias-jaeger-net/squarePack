@@ -55,10 +55,10 @@ grid = calc(number, width, height);
 ### in calc() an optimal square is calculated
 ```JavaScript
 // calculate biggest possible length
-const len_opt = floor(sqrt(width * height / number));
+const optimum = floor(sqrt(width * height / number));
 
 // current optimal length
-len = len_opt;
+len = optimum;
 
 // try how many squares fit in the sceen
 while (len > 0) {
