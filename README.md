@@ -1,23 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# square_pack
-Packs a given number of squares in any rectangular area
-Written in phyton, by Markus Murschitz (Vienna, 2018).
-https://github.com/mamut-m/square-pack
-
-
-## About square_pack.js
-The square_pack is an algorithm, that calculates the longest possible
-side (S) of any number (N) squares, in a given rectangle (W x H) and
-returns the number of columns (C) and rows (R). I translated Markus
-phyton code to JavaScript and set up a basic example, drawing the results
-to an html5 <canvas>. I'm using the P5 JavaScript library (http://p5.js.org)
-to render this animation.
-=======
-# How to pack a specified number of squares in any given browser window?
-=======
 # How to pack a specified number of squares in a given browser window, maintaining an optimal side length?
->>>>>>> master
 
 Watch our poor algorithm trying to pack an increasing
 number of squares on the screen until it eventually breaks
@@ -45,23 +26,6 @@ Have a look at Markus version: https://github.com/mamut-m/square-pack
 ![Frame 6](output/Frame-6.jpg)
 ![Frame 7](output/Frame-7.jpg)
 
-<<<<<<< HEAD
-
-
-## About square_pack in python
-This JavaScript code is based on square_pack by Markus Murschitz,
-who wrote the code for calc() in python, after talking to me about
-the problem on a lazy afternoon in Austria.
-
-Have a look at his version: https://github.com/mamut-m/square-pack
-
-## libs   
-I'm also using the P5 JavaScript library to render this
-animation in the browser window.
-
-http://p5.js.org
->>>>>>> master
-=======
 ## About this program  
 
 I render an animation using the P5 JavaScript library.
@@ -111,6 +75,4 @@ while (len > 0) {
 }
 ```
 
-
 https://matthias-jaeger.net
->>>>>>> master
