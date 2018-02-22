@@ -29,8 +29,8 @@ Have a look at Markus version: https://github.com/mamut-m/square-pack
 ## About this program  
 
 I render an animation using the P5 JavaScript library.
-Each animation frame our algorithm, defined in `calc(n,w,h)`,
-located in `js/square_pack.js` is called with with a constantly
+Each animation frame our algorithm, defined in `squarePack(n,w,h)`,
+located in `js/squarepack.js` is called with with a constantly
 increasing specified number and the current size of the window.
 In a variable I named `let grid;` I store the returned parameters,
 containing the length of a single square, the number of columns and
@@ -46,13 +46,13 @@ number = 1;
 squares = [];
 ```
 
-### each frame calc() returns rows, columns and side length
+### each frame squarePack() returns rows, columns and side length
 ```JavaScript
 // stores the results in grid
 grid = calc(number, width, height);
 ```
 
-### in calc() an optimal square is calculated
+### in squarePack() an optimal square is calculated
 ```JavaScript
 // calculate biggest possible length
 const optimum = floor(sqrt(width * height / number));
